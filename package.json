@@ -1,0 +1,23 @@
+{
+  "name": "senior-qa-ai-automation-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright UI and API automation for the senior QA take-home assessment",
+  "scripts": {
+    "test": "playwright test",
+    "test:web": "playwright test --project=web",
+    "test:api": "playwright test --project=api",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:headed": "playwright test --headed --project=web",
+    "test:report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.0"
+  }
+}
